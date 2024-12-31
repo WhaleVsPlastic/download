@@ -1,0 +1,160 @@
+body {
+    background-color: #161616;
+    font-family: "Gill Sans", sans-serif;
+    color: aquamarine;
+    text-align: center;
+}
+
+header {
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+}
+
+.language {
+    background: linear-gradient(45deg, aquamarine, #36454f);
+    position: absolute;
+    transform: scale(1.1);
+    left: 25px;
+    padding: 5px;
+    padding-right: 16px;
+    border-radius: 5px;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.icon {
+    color: #111;
+    position: absolute;
+    left: 97px;
+    top: 58px;
+    margin-left: 10px;
+    font-size: 15px;
+    pointer-events: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 45px;
+    background: linear-gradient(45deg, #36454f, aquamarine, #36454f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3 {
+    font-size: 30px;
+    background: linear-gradient(180deg, #50c878, #fffdd0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+    font-size: 20px;
+}
+
+.mac-btn {
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    border: none;
+    background: transparent;
+    transform: scale(2);
+    color: aquamarine;
+    transition: color 100ms linear;
+    z-index: 0;
+}
+
+.mac-btn::after {
+    border-radius: 10px;
+    content: "";
+    position: absolute;
+    background-color: #161616;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: background 100ms linear;
+    z-index: -1;
+}
+
+.mac-btn::before {
+    border-radius: 10px;
+    content: "";
+    background: linear-gradient(45deg, aqua, aquamarine, #98FF98);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    z-index: -1;
+    filter: blur(2px);
+    opacity: 1;
+}
+
+.mac-btn:hover::after {
+    background: transparent;
+}
+
+.mac-btn:hover {
+    color: #161616;
+}
+
+.win-btn {
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    border: none;
+    background: transparent;
+    margin-top: 60px;
+    transform: scale(2);
+    color: aquamarine;
+    transition: color 100ms linear;
+    z-index: 0;
+}
+
+
+.win-btn::after {
+    border-radius: 10px;
+    content: "";
+    position: absolute;
+    background-color: #161616;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: background 100ms linear;
+    z-index: -1;
+}
+
+.win-btn::before {
+    border-radius: 10px;
+    content: "";
+    background: linear-gradient(45deg, aqua, aquamarine, #98FF98);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    z-index: -1;
+    filter: blur(2px);
+    opacity: 1;
+}
+
+.win-btn:hover::after {
+    background: transparent;
+}
+
+.win-btn:hover {
+    color: #161616;
+}
